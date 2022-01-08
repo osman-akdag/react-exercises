@@ -20,7 +20,6 @@ export default function Footer({ setActiveCategory, activeCategory, CompletedTod
                     <a onClick={(e) => { setActiveCategory("Completed") }} className={activeCategory === "Completed" ? 'selected' : null}>Completed</a>
                 </li>
             </ul>
-            {/* Hidden if no completed items are left ↓ */}
             {
                 CompletedTodos.length > 0 
                 ? <button className="clear-completed" onClick={()=>clearCompletedTodo()}>Clear completed</button>
